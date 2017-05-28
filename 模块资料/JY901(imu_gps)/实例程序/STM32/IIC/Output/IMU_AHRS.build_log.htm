@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=Y2BTG-VH4ZA-GPMZR-KBEUS-EJBC0-Y66NY
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  F:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+G:\rec files\FG_1.5\JY901\ÊµÀý³ÌÐò\STM32\IIC\IMU_AHRS.uvproj
+Project File Date:  01/19/2015
+
+<h2>Output:</h2>
+Rebuild target 'IMU_AHRS'
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_md.s...
+compiling delay.c...
+HardWareDriver\delay.c(34): warning:  #68-D: integer conversion resulted in a change of sign
+    NVIC_InitStructure.NVIC_IRQChannel = SysTick_IRQn;
+HardWareDriver\delay.c: 1 warning, 0 errors
+compiling IOI2C.c...
+compiling UARTs.c...
+HardWareDriver\UARTs\UARTs.c(261): warning:  #550-D: variable "data" was set but never used
+    unsigned char data;
+HardWareDriver\UARTs\UARTs.c: 1 warning, 0 errors
+compiling main.c...
+User_Src\main.c(70): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                sprintf(str,"a:%.3f %.3f %.3f w:%.3f %.3f %.3f  h:%.0f %.0f %.0f  Angle:%.3f %.3f %.3f \r\n",a[0],a[1],a[2],w[0],w[1],w[2],h[0],h[1],h[2],Angle[0],Angle[1],Angle[2]);
+User_Src\main.c(40): warning:  #177-D: variable "Math_hz" was declared but never referenced
+        int16_t Math_hz=0;
+User_Src\main.c(41): warning:  #177-D: variable "i" was declared but never referenced
+        short i=0;
+User_Src\main.c: 3 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+linking...
+Program Size: Code=10588 RO-data=348 RW-data=52 ZI-data=2044  
+FromELF: creating hex file...
+".\Output\IMU_AHRS.axf" - 0 Error(s), 5 Warning(s).
+</pre>
+</body>
+</html>
